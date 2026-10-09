@@ -1,0 +1,307 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DoubleTenTrip//2026//ZH-TW
+CALSCALE:GREGORIAN
+X-WR-CALNAME:雙十親子遊2026
+X-WR-TIMEZONE:Asia/Taipei
+BEGIN:VEVENT
+UID:d10-0800@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T000000Z
+DTEND:20261010T000500Z
+SUMMARY:出發 → 東眼山餐廳停車場
+DESCRIPTION:預計09:45集合。預設萬大國小出發，可修改；實
+ 際車程依Google Maps路況。\nGoogle Maps：https://www.google.com/map
+ s/dir/?api=1&destination=24.8282211%2C121.40986459999999&travelmode=drivin
+ g&origin=%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E
+ 5%A4%A7%E5%9C%8B%E6%B0%91%E5%B0%8F%E5%AD%B8&dir_action=navigate
+LOCATION:東眼山餐廳停車場
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8282211%2C121.409
+ 86459999999&travelmode=driving&origin=%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC
+ %E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5%B0%8F%E5%AD%B8&d
+ ir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:出發 → 東眼山餐廳停車場
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-0945@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T014500Z
+DTEND:20261010T015000Z
+SUMMARY:東眼山集合／森林散步
+DESCRIPTION:09:45–12:00。過收費口右轉，餐廳停車場集合。
+ 原行程費用：成人100元；65歲以上、6歲以下10元；12歲以
+ 下50元；停車100元。費用依現場公告。\nGoogle Maps：https://
+ www.google.com/maps/dir/?api=1&destination=24.8282211%2C121.40986459999999
+ &travelmode=driving&dir_action=navigate
+LOCATION:東眼山餐廳停車場
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8282211%2C121.409
+ 86459999999&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:東眼山集合／森林散步
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1200@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T040000Z
+DTEND:20261010T040500Z
+SUMMARY:離開東眼山 → 泉頭午餐
+DESCRIPTION:12:30訂位16位，午餐至13:30。羅浮里147-2號；車停
+ 店門馬路旁白線內，依現場標示。\nGoogle Maps：https://www.g
+ oogle.com/maps/dir/?api=1&destination=24.797705%2C121.360962&travelmode=dr
+ iving&dir_action=navigate
+LOCATION:泉頭泰雅創意料理
+URL:https://www.google.com/maps/dir/?api=1&destination=24.797705%2C121.3609
+ 62&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:離開東眼山 → 泉頭午餐
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1230@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T043000Z
+DTEND:20261010T043500Z
+SUMMARY:泉頭泰雅創意料理午餐
+DESCRIPTION:已訂16位，12:30–13:30。\nGoogle Maps：https://www.googl
+ e.com/maps/dir/?api=1&destination=24.797705%2C121.360962&travelmode=drivin
+ g&dir_action=navigate
+LOCATION:泉頭泰雅創意料理
+URL:https://www.google.com/maps/dir/?api=1&destination=24.797705%2C121.3609
+ 62&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:泉頭泰雅創意料理午餐
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1330@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T053000Z
+DTEND:20261010T053500Z
+SUMMARY:離開泉頭 → 基拉耳山莊
+DESCRIPTION:14:00抵達，泡茶、走步道；16:00入住；18:00民宿內
+ 晚餐。\nGoogle Maps：https://www.google.com/maps/dir/?api=1&destinatio
+ n=24.8052836%2C121.3474821&travelmode=driving&dir_action=navigate
+LOCATION:基拉耳山莊
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.347
+ 4821&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:離開泉頭 → 基拉耳山莊
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1400@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T060000Z
+DTEND:20261010T060500Z
+SUMMARY:基拉耳山莊泡茶、走步道
+DESCRIPTION:桃園市復興區溪口路16巷29號。\nGoogle Maps：https:/
+ /www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.3474821&trave
+ lmode=driving&dir_action=navigate
+LOCATION:基拉耳山莊
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.347
+ 4821&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:基拉耳山莊泡茶、走步道
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1600@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T080000Z
+DTEND:20261010T080500Z
+SUMMARY:基拉耳山莊 Check in
+DESCRIPTION:入住提醒；已在山莊可直接略過。\nGoogle Maps：ht
+ tps://www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.3474821&
+ travelmode=driving&dir_action=navigate
+LOCATION:基拉耳山莊
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.347
+ 4821&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:基拉耳山莊 Check in
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-1800@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261010T100000Z
+DTEND:20261010T100500Z
+SUMMARY:民宿內晚餐
+DESCRIPTION:在基拉耳山莊用餐。\nGoogle Maps：https://www.google.c
+ om/maps/dir/?api=1&destination=24.8052836%2C121.3474821&travelmode=driving
+ &dir_action=navigate
+LOCATION:基拉耳山莊
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8052836%2C121.347
+ 4821&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:民宿內晚餐
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1030@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T023000Z
+DTEND:20261011T023500Z
+SUMMARY:Check out → 小烏來停車場
+DESCRIPTION:10:30–11:00前往及停車。每次100元，依現場公告
+ 。備用：小烏來金地收費停車場。\nGoogle Maps：https://www.g
+ oogle.com/maps/dir/?api=1&destination=24.7910808%2C121.3781514&travelmode=
+ driving&dir_action=navigate
+LOCATION:小烏來停車場
+URL:https://www.google.com/maps/dir/?api=1&destination=24.7910808%2C121.378
+ 1514&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:Check out → 小烏來停車場
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1100@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T030000Z
+DTEND:20261011T030500Z
+SUMMARY:分組：4人買票／12人拍照
+DESCRIPTION:4人至天空步道售票處買11:30梯次；12人先去寰宇
+ 平台拍照；11:25於天空步道集合。若買不到11:30，改水岸
+ 綠廊看瀑布。點通知步行至天空步道。\nGoogle Maps：https:/
+ /www.google.com/maps/dir/?api=1&destination=24.790326399999998%2C121.37548
+ 43&travelmode=walking&dir_action=navigate
+LOCATION:小烏來天空步道
+URL:https://www.google.com/maps/dir/?api=1&destination=24.790326399999998%2
+ C121.3754843&travelmode=walking&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:分組：4人買票／12人拍照
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1125@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T032500Z
+DTEND:20261011T033000Z
+SUMMARY:天空步道集合
+DESCRIPTION:16人集合，準備11:30梯次；是否入場依現場購票
+ 結果。\nGoogle Maps：https://www.google.com/maps/dir/?api=1&destinatio
+ n=24.790326399999998%2C121.3754843&travelmode=walking&dir_action=navigate
+LOCATION:小烏來天空步道
+URL:https://www.google.com/maps/dir/?api=1&destination=24.790326399999998%2
+ C121.3754843&travelmode=walking&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:天空步道集合
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1130@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T033000Z
+DTEND:20261011T033500Z
+SUMMARY:天空步道預定梯次
+DESCRIPTION:此為預定購票梯次，尚未購票，依現場可購梯次
+ 安排。\nGoogle Maps：https://www.google.com/maps/dir/?api=1&destinatio
+ n=24.790326399999998%2C121.3754843&travelmode=walking&dir_action=navigate
+LOCATION:小烏來天空步道
+URL:https://www.google.com/maps/dir/?api=1&destination=24.790326399999998%2
+ C121.3754843&travelmode=walking&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:天空步道預定梯次
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1200@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T040000Z
+DTEND:20261011T040500Z
+SUMMARY:走回小烏來停車場
+DESCRIPTION:原行程12:00開始走回停車場；預計12:30離開。\nGoo
+ gle Maps：https://www.google.com/maps/dir/?api=1&destination=24.7910808%2
+ C121.3781514&travelmode=walking&dir_action=navigate
+LOCATION:小烏來停車場
+URL:https://www.google.com/maps/dir/?api=1&destination=24.7910808%2C121.378
+ 1514&travelmode=walking&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:走回小烏來停車場
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1230@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T043000Z
+DTEND:20261011T043500Z
+SUMMARY:離開小烏來 → 山月茶屋
+DESCRIPTION:13:00已訂16位，午餐至14:30。桃園市復興區枕頭山
+ 7鄰11之5號。\nGoogle Maps：https://www.google.com/maps/dir/?api=1&des
+ tination=24.8197542%2C121.3399656&travelmode=driving&dir_action=navigate
+LOCATION:景美山林茶園&山月茶屋
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8197542%2C121.339
+ 9656&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:離開小烏來 → 山月茶屋
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1300@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T050000Z
+DTEND:20261011T050500Z
+SUMMARY:山月茶屋午餐
+DESCRIPTION:已訂位16位，13:00–14:30。\nGoogle Maps：https://www.go
+ ogle.com/maps/dir/?api=1&destination=24.8197542%2C121.3399656&travelmode=d
+ riving&dir_action=navigate
+LOCATION:景美山林茶園&山月茶屋
+URL:https://www.google.com/maps/dir/?api=1&destination=24.8197542%2C121.339
+ 9656&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:山月茶屋午餐
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-1430@double-ten-trip-2026
+DTSTAMP:20261009T000000Z
+DTSTART:20261011T063000Z
+DTEND:20261011T063500Z
+SUMMARY:行程結束 → 萬大國小
+DESCRIPTION:返程目的地：臺北市萬華區萬大國小。\nGoogle Map
+ s：https://www.google.com/maps/dir/?api=1&destination=%E8%87%BA%E5%8C%97%
+ E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5
+ %B0%8F%E5%AD%B8&travelmode=driving&dir_action=navigate
+LOCATION:萬大國小
+URL:https://www.google.com/maps/dir/?api=1&destination=%E8%87%BA%E5%8C%97%E
+ 5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5%
+ B0%8F%E5%AD%B8&travelmode=driving&dir_action=navigate
+BEGIN:VALARM
+TRIGGER:PT0S
+ACTION:DISPLAY
+DESCRIPTION:行程結束 → 萬大國小
+END:VALARM
+END:VEVENT
+END:VCALENDAR

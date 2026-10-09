@@ -1,0 +1,1245 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TaskerData sr="" dvi="1" tv="6.3.13">
+  <Profile sr="prof100" ve="2">
+    <id>100</id>
+    <mid0>200</mid0>
+    <nme>d10-0800 出發 → 東眼山餐廳停車場</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>8</fh>
+      <fm>0</fm>
+      <th>8</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task200">
+    <id>200</id>
+    <nme>d10-0800 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>547</code>
+      <Str sr="arg0" ve="3">%TripOrigin</Str>
+      <Str sr="arg1" ve="3">臺北市萬華區萬大國民小學</Str>
+      <Int sr="arg2" val="0" />
+      <Int sr="arg3" val="0" />
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TripOrigin</lhs>
+          <op>13</op>
+          <rhs />
+        </Condition>
+      </ConditionList>
+    </Action>
+    <Action sr="act1" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">出發 → 東眼山餐廳停車場</Str>
+      <Str sr="arg1" ve="3">預計09:45集合。預設萬大國小出發，可修改；實際車程依Google Maps路況。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8282211%2C121.40986459999999&amp;travelmode=driving&amp;dir_action=navigate&amp;origin=%TripOrigin</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof101" ve="2">
+    <id>101</id>
+    <mid0>201</mid0>
+    <nme>d10-0800 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">出發 → 東眼山餐廳停車場</Str>
+    </Event>
+  </Profile>
+  <Task sr="task201">
+    <id>201</id>
+    <nme>d10-0800 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8282211%2C121.40986459999999&amp;travelmode=driving&amp;dir_action=navigate&amp;origin=%TripOrigin</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof102" ve="2">
+    <id>102</id>
+    <mid0>202</mid0>
+    <nme>d10-0945 東眼山集合／森林散步</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>9</fh>
+      <fm>45</fm>
+      <th>9</th>
+      <tm>45</tm>
+    </Time>
+  </Profile>
+  <Task sr="task202">
+    <id>202</id>
+    <nme>d10-0945 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">東眼山集合／森林散步</Str>
+      <Str sr="arg1" ve="3">09:45–12:00。過收費口右轉，餐廳停車場集合。原行程費用：成人100元；65歲以上、6歲以下10元；12歲以下50元；停車100元。費用依現場公告。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8282211%2C121.40986459999999&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof103" ve="2">
+    <id>103</id>
+    <mid0>203</mid0>
+    <nme>d10-0945 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">東眼山集合／森林散步</Str>
+    </Event>
+  </Profile>
+  <Task sr="task203">
+    <id>203</id>
+    <nme>d10-0945 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8282211%2C121.40986459999999&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof104" ve="2">
+    <id>104</id>
+    <mid0>204</mid0>
+    <nme>d10-1200 離開東眼山 → 泉頭午餐</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>12</fh>
+      <fm>0</fm>
+      <th>12</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task204">
+    <id>204</id>
+    <nme>d10-1200 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">離開東眼山 → 泉頭午餐</Str>
+      <Str sr="arg1" ve="3">12:30訂位16位，午餐至13:30。羅浮里147-2號；車停店門馬路旁白線內，依現場標示。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.797705%2C121.360962&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof105" ve="2">
+    <id>105</id>
+    <mid0>205</mid0>
+    <nme>d10-1200 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">離開東眼山 → 泉頭午餐</Str>
+    </Event>
+  </Profile>
+  <Task sr="task205">
+    <id>205</id>
+    <nme>d10-1200 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.797705%2C121.360962&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof106" ve="2">
+    <id>106</id>
+    <mid0>206</mid0>
+    <nme>d10-1230 泉頭泰雅創意料理午餐</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>12</fh>
+      <fm>30</fm>
+      <th>12</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task206">
+    <id>206</id>
+    <nme>d10-1230 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">泉頭泰雅創意料理午餐</Str>
+      <Str sr="arg1" ve="3">已訂16位，12:30–13:30。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.797705%2C121.360962&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof107" ve="2">
+    <id>107</id>
+    <mid0>207</mid0>
+    <nme>d10-1230 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">泉頭泰雅創意料理午餐</Str>
+    </Event>
+  </Profile>
+  <Task sr="task207">
+    <id>207</id>
+    <nme>d10-1230 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.797705%2C121.360962&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof108" ve="2">
+    <id>108</id>
+    <mid0>208</mid0>
+    <nme>d10-1330 離開泉頭 → 基拉耳山莊</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>13</fh>
+      <fm>30</fm>
+      <th>13</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task208">
+    <id>208</id>
+    <nme>d10-1330 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">離開泉頭 → 基拉耳山莊</Str>
+      <Str sr="arg1" ve="3">14:00抵達，泡茶、走步道；16:00入住；18:00民宿內晚餐。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof109" ve="2">
+    <id>109</id>
+    <mid0>209</mid0>
+    <nme>d10-1330 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">離開泉頭 → 基拉耳山莊</Str>
+    </Event>
+  </Profile>
+  <Task sr="task209">
+    <id>209</id>
+    <nme>d10-1330 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof110" ve="2">
+    <id>110</id>
+    <mid0>210</mid0>
+    <nme>d10-1400 基拉耳山莊泡茶、走步道</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>14</fh>
+      <fm>0</fm>
+      <th>14</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task210">
+    <id>210</id>
+    <nme>d10-1400 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">基拉耳山莊泡茶、走步道</Str>
+      <Str sr="arg1" ve="3">桃園市復興區溪口路16巷29號。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof111" ve="2">
+    <id>111</id>
+    <mid0>211</mid0>
+    <nme>d10-1400 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">基拉耳山莊泡茶、走步道</Str>
+    </Event>
+  </Profile>
+  <Task sr="task211">
+    <id>211</id>
+    <nme>d10-1400 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof112" ve="2">
+    <id>112</id>
+    <mid0>212</mid0>
+    <nme>d10-1600 基拉耳山莊 Check in</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>16</fh>
+      <fm>0</fm>
+      <th>16</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task212">
+    <id>212</id>
+    <nme>d10-1600 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">基拉耳山莊 Check in</Str>
+      <Str sr="arg1" ve="3">入住提醒；已在山莊可直接略過。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof113" ve="2">
+    <id>113</id>
+    <mid0>213</mid0>
+    <nme>d10-1600 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">基拉耳山莊 Check in</Str>
+    </Event>
+  </Profile>
+  <Task sr="task213">
+    <id>213</id>
+    <nme>d10-1600 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof114" ve="2">
+    <id>114</id>
+    <mid0>214</mid0>
+    <nme>d10-1800 民宿內晚餐</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>18</fh>
+      <fm>0</fm>
+      <th>18</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task214">
+    <id>214</id>
+    <nme>d10-1800 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">民宿內晚餐</Str>
+      <Str sr="arg1" ve="3">在基拉耳山莊用餐。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791561600</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof115" ve="2">
+    <id>115</id>
+    <mid0>215</mid0>
+    <nme>d10-1800 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">民宿內晚餐</Str>
+    </Event>
+  </Profile>
+  <Task sr="task215">
+    <id>215</id>
+    <nme>d10-1800 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8052836%2C121.3474821&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof116" ve="2">
+    <id>116</id>
+    <mid0>216</mid0>
+    <nme>d11-1030 Check out → 小烏來停車場</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>10</fh>
+      <fm>30</fm>
+      <th>10</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task216">
+    <id>216</id>
+    <nme>d11-1030 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">Check out → 小烏來停車場</Str>
+      <Str sr="arg1" ve="3">10:30–11:00前往及停車。每次100元，依現場公告。備用：小烏來金地收費停車場。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.7910808%2C121.3781514&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof117" ve="2">
+    <id>117</id>
+    <mid0>217</mid0>
+    <nme>d11-1030 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">Check out → 小烏來停車場</Str>
+    </Event>
+  </Profile>
+  <Task sr="task217">
+    <id>217</id>
+    <nme>d11-1030 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.7910808%2C121.3781514&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof118" ve="2">
+    <id>118</id>
+    <mid0>218</mid0>
+    <nme>d11-1100 分組：4人買票／12人拍照</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>11</fh>
+      <fm>0</fm>
+      <th>11</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task218">
+    <id>218</id>
+    <nme>d11-1100 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">分組：4人買票／12人拍照</Str>
+      <Str sr="arg1" ve="3">4人至天空步道售票處買11:30梯次；12人先去寰宇平台拍照；11:25於天空步道集合。若買不到11:30，改水岸綠廊看瀑布。點通知步行至天空步道。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof119" ve="2">
+    <id>119</id>
+    <mid0>219</mid0>
+    <nme>d11-1100 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">分組：4人買票／12人拍照</Str>
+    </Event>
+  </Profile>
+  <Task sr="task219">
+    <id>219</id>
+    <nme>d11-1100 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof120" ve="2">
+    <id>120</id>
+    <mid0>220</mid0>
+    <nme>d11-1125 天空步道集合</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>11</fh>
+      <fm>25</fm>
+      <th>11</th>
+      <tm>25</tm>
+    </Time>
+  </Profile>
+  <Task sr="task220">
+    <id>220</id>
+    <nme>d11-1125 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">天空步道集合</Str>
+      <Str sr="arg1" ve="3">16人集合，準備11:30梯次；是否入場依現場購票結果。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof121" ve="2">
+    <id>121</id>
+    <mid0>221</mid0>
+    <nme>d11-1125 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">天空步道集合</Str>
+    </Event>
+  </Profile>
+  <Task sr="task221">
+    <id>221</id>
+    <nme>d11-1125 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof122" ve="2">
+    <id>122</id>
+    <mid0>222</mid0>
+    <nme>d11-1130 天空步道預定梯次</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>11</fh>
+      <fm>30</fm>
+      <th>11</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task222">
+    <id>222</id>
+    <nme>d11-1130 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">天空步道預定梯次</Str>
+      <Str sr="arg1" ve="3">此為預定購票梯次，尚未購票，依現場可購梯次安排。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof123" ve="2">
+    <id>123</id>
+    <mid0>223</mid0>
+    <nme>d11-1130 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">天空步道預定梯次</Str>
+    </Event>
+  </Profile>
+  <Task sr="task223">
+    <id>223</id>
+    <nme>d11-1130 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.790326399999998%2C121.3754843&amp;travelmode=walking&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof124" ve="2">
+    <id>124</id>
+    <mid0>224</mid0>
+    <nme>d11-1200 走回小烏來停車場</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>12</fh>
+      <fm>0</fm>
+      <th>12</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task224">
+    <id>224</id>
+    <nme>d11-1200 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">走回小烏來停車場</Str>
+      <Str sr="arg1" ve="3">原行程12:00開始走回停車場；預計12:30離開。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.7910808%2C121.3781514&amp;travelmode=walking&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof125" ve="2">
+    <id>125</id>
+    <mid0>225</mid0>
+    <nme>d11-1200 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">走回小烏來停車場</Str>
+    </Event>
+  </Profile>
+  <Task sr="task225">
+    <id>225</id>
+    <nme>d11-1200 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.7910808%2C121.3781514&amp;travelmode=walking&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof126" ve="2">
+    <id>126</id>
+    <mid0>226</mid0>
+    <nme>d11-1230 離開小烏來 → 山月茶屋</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>12</fh>
+      <fm>30</fm>
+      <th>12</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task226">
+    <id>226</id>
+    <nme>d11-1230 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">離開小烏來 → 山月茶屋</Str>
+      <Str sr="arg1" ve="3">13:00已訂16位，午餐至14:30。桃園市復興區枕頭山7鄰11之5號。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8197542%2C121.3399656&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof127" ve="2">
+    <id>127</id>
+    <mid0>227</mid0>
+    <nme>d11-1230 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">離開小烏來 → 山月茶屋</Str>
+    </Event>
+  </Profile>
+  <Task sr="task227">
+    <id>227</id>
+    <nme>d11-1230 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8197542%2C121.3399656&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof128" ve="2">
+    <id>128</id>
+    <mid0>228</mid0>
+    <nme>d11-1300 山月茶屋午餐</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>13</fh>
+      <fm>0</fm>
+      <th>13</th>
+      <tm>0</tm>
+    </Time>
+  </Profile>
+  <Task sr="task228">
+    <id>228</id>
+    <nme>d11-1300 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">山月茶屋午餐</Str>
+      <Str sr="arg1" ve="3">已訂位16位，13:00–14:30。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8197542%2C121.3399656&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof129" ve="2">
+    <id>129</id>
+    <mid0>229</mid0>
+    <nme>d11-1300 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">山月茶屋午餐</Str>
+    </Event>
+  </Profile>
+  <Task sr="task229">
+    <id>229</id>
+    <nme>d11-1300 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8197542%2C121.3399656&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Profile sr="prof130" ve="2">
+    <id>130</id>
+    <mid0>230</mid0>
+    <nme>d11-1430 行程結束 → 萬大國小</nme>
+    <flags>8</flags>
+    <Time sr="con0">
+      <fh>14</fh>
+      <fm>30</fm>
+      <th>14</th>
+      <tm>30</tm>
+    </Time>
+  </Profile>
+  <Task sr="task230">
+    <id>230</id>
+    <nme>d11-1430 通知</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">行程結束 → 萬大國小</Str>
+      <Str sr="arg1" ve="3">返程目的地：臺北市萬華區萬大國小。
+點通知或展開按 Google Maps 導航</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5%B0%8F%E5%AD%B8&amp;travelmode=driving&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+      <ConditionList sr="if">
+        <Condition sr="c0" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>7</op>
+          <rhs>1791648000</rhs>
+        </Condition>
+        <bool0>And</bool0>
+        <Condition sr="c1" ve="3">
+          <lhs>%TIMES</lhs>
+          <op>6</op>
+          <rhs>1791734400</rhs>
+        </Condition>
+      </ConditionList>
+    </Action>
+  </Task>
+  <Profile sr="prof131" ve="2">
+    <id>131</id>
+    <mid0>231</mid0>
+    <nme>d11-1430 點通知導航</nme>
+    <flags>8</flags>
+    <Event sr="con0" ve="2">
+      <code>2000</code>
+      <pri>0</pri>
+      <App sr="arg0" />
+      <Str sr="arg1" ve="3">行程結束 → 萬大國小</Str>
+    </Event>
+  </Profile>
+  <Task sr="task231">
+    <id>231</id>
+    <nme>d11-1430 開啟導航</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>104</code>
+      <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5%B0%8F%E5%AD%B8&amp;travelmode=driving&amp;dir_action=navigate</Str>
+    </Action>
+  </Task>
+  <Task sr="task400">
+    <id>400</id>
+    <nme>設定第一天出發地（可修改）</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>547</code>
+      <Str sr="arg0" ve="3">%TripOrigin</Str>
+      <Str sr="arg1" ve="3">臺北市萬華區萬大國民小學</Str>
+      <Int sr="arg2" val="0" />
+      <Int sr="arg3" val="0" />
+    </Action>
+  </Task>
+  <Task sr="task401">
+    <id>401</id>
+    <nme>測試通知（立即）</nme>
+    <pri>10</pri>
+    <Action sr="act0" ve="7">
+      <code>523</code>
+      <Str sr="arg0" ve="3">雙十親子遊測試</Str>
+      <Str sr="arg1" ve="3">展開通知，點 Google Maps 導航；應開啟東眼山路線。</Str>
+      <Img sr="arg2" ve="2" />
+      <Int sr="arg3" val="0" />
+      <Int sr="arg4" val="0" />
+      <Int sr="arg5" val="4" />
+      <Int sr="arg6" val="0" />
+      <Int sr="arg7" val="0" />
+      <Int sr="arg8" val="0" />
+      <Str sr="arg9" ve="3" />
+      <Str sr="arg10" ve="3" />
+      <Str sr="arg11" ve="3">雙十親子遊2026</Str>
+      <ListElementItem sr="item0">
+        <label>Google Maps 導航</label>
+        <Action sr="action" ve="7">
+          <code>104</code>
+          <Str sr="arg0" ve="3">https://www.google.com/maps/dir/?api=1&amp;destination=24.8282211%2C121.40986459999999&amp;travelmode=driving&amp;origin=%E8%87%BA%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E8%90%AC%E5%A4%A7%E5%9C%8B%E6%B0%91%E5%B0%8F%E5%AD%B8&amp;dir_action=navigate</Str>
+        </Action>
+      </ListElementItem>
+    </Action>
+  </Task>
+  <Project sr="proj0" ve="2">
+    <name>雙十親子遊2026</name>
+    <pids>100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131</pids>
+    <tids>200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,400,401</tids>
+  </Project>
+</TaskerData>

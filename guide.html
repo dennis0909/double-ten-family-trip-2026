@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>雙十親子遊｜安裝說明</title><style>body{font-family:system-ui;max-width:800px;margin:auto;padding:22px}pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font:inherit}a{color:#146b55}</style><a href="./">← 回行程與安裝頁</a><pre># 雙十親子遊｜2026/10/10–11
+
+預設10/10 08:00從臺北市萬華區萬大國小出發，09:45於東眼山餐廳停車場集合；10/11 14:30返程回萬大國小。共16則通知，其中含出發、集合、用餐、入住及步行提醒。所有日期時間皆為台灣時間。
+
+## iPhone：Scriptable通知＋原生捷徑啟動器
+
+1. 安裝 [Scriptable](https://apps.apple.com/app/scriptable/id1405459188)，允許通知。
+2. 下載 `雙十親子遊-iOS.scriptable`，在「檔案」中分享給 Scriptable，確認加入。若分享選單無Scriptable，可改將 `雙十親子遊-iOS.js` 存入 iCloud Drive／Scriptable，並在App內命名為「雙十親子遊2026」。也可新增空白Scriptable腳本，貼入JS檔內容，使用同名。
+3. 執行腳本，選「安裝／更新全部通知」，確認或修改出發地，按「排入通知」。一次排入全部未來通知，不需要為16個時間逐一設定自動化。
+4. 執行「測試：10秒後通知」，切換至主畫面或鎖屏，點測試通知，確認能開啟Google Maps。導航可能先顯示路線預覽，再需按「開始」，取決於位置與Maps狀態。
+5. 可另外開啟 `雙十親子遊-iOS.shortcut`，確認加入原生「捷徑」App，作為後續一鍵啟動入口。它需要上述Scriptable腳本先安裝，並非獨立排程器。
+
+通知由iOS排程，不需讓腳本連續執行。請確認Scriptable通知未被專注模式或排程摘要延後；通知顯示內容與鎖屏設定由你的iPhone控制。程式僅替換／取消本行程的通知，保留其他腳本通知。重新安裝只排入未來時間，已過時間不補發。修改出發地後重新執行「安裝／更新全部通知」。返程仍固定萬大國小。
+
+## Android：Tasker整包匯入
+
+1. 安裝 [Tasker](https://tasker.joaoapps.com/download.html)；授權通知。Tasker為第三方App，可能需要付費。
+2. 下載 `雙十親子遊-Android.prj.xml`。在Tasker主畫面長按底部專案分頁／首頁圖示 → Import／匯入 → 選此檔 → 確認。這一次匯入會建立全部通知、通知點擊導航與測試任務。
+3. 或開啟 `行程與導航.html`，點「Android：Tasker 一鍵匯入」，由Tasker顯示匯入確認。若檔案預覽器禁用JavaScript或瀏覽器阻擋自訂協定，改用上一步XML匯入；無需註冊TaskerNet帳號。
+4. 確認專案「雙十親子遊2026」已啟用並儲存。手機時區使用「台北／GMT+08:00」。Tasker → Preferences → Monitor → Use Reliable Alarms 選Always；依裝置提示允許鬧鐘／提醒權限。電池設定允許Tasker在背景執行。
+5. 在Tasks執行「測試通知（立即）」。將手機鎖屏確認有通知，展開通知並點「Google Maps 導航」。正式通知也已綁定點擊開啟對應路線。
+6. 改出發地：Tasks →「設定第一天出發地（可修改）」→ Variable Set內的To欄改成自己的地址 → 執行一次。只影響第一天08:00導航，返程固定萬大國小。未修改則預設萬大國小。
+
+時間Profiles會每天評估，但通知Action帶2026/10/10或10/11的日期限制，其他日期不發行程通知。旅行後可停用或刪除整個專案；再次匯入前先刪除舊版同名專案，避免重複排程。Android休眠、省電與廠商背景限制可能延後通知，務必在自己手機完成鎖屏測試。取消授權或關機時無法保證通知。
+
+## 地圖與行程
+
+開啟 `行程與導航.html`，可修改第一天出發地並開啟每日整條路線、各段導航、原始Maps清單及備用地點搜尋。請用瀏覽器開啟HTML；檔案App的純預覽模式可能不執行互動。也可使用 `Google-Maps路線.md` 的直接連結。
+
+- 第一日開車：萬大國小 → 東眼山餐廳停車場 → 泉頭泰雅創意料理 → 基拉耳山莊。
+- 第二日開車：基拉耳山莊 → 小烏來停車場 → 景美山林茶園＆山月茶屋 → 萬大國小。
+- 小烏來步行另列：停車場 → 天空步道 → 停車場。分組寰宇平台拍照、購票、集合及水岸綠廊備案寫入11:00通知；備用點為搜尋連結，未冒充已核對圖釘。
+
+本頁修改出發地僅更新本頁路線；已排入手機通知需依平台說明另行修改。多站開車路線是整日總覽；實際每段使用各段通知導航，以當下位置出發。第一天08:00則保留可修改的明確出發地。步道路線依Google Maps可用資料，園區內依現場標誌、開放狀態及動線。
+
+09:45等表列時間保留為抵達或活動時間；12:00、13:30、第二天10:30、12:30、14:30為離開／轉場通知。出發時間並非依即時車程動態倒推，無法保證準時抵達；08:00出發時間由使用者指定。11:30是現場欲購買梯次，匯入不會購票或完成預約。餐廳訂位與收費沿用使用者提供資訊，未替你向店家確認。
+
+## 日曆備用
+
+`雙十親子遊-日曆備用.ics`含16個五分鐘提醒事件與Google Maps連結，提醒時間設在事件起始。完整活動區間保留於說明，不將五分鐘誤作活動時長。
+
+Google Calendar官方支援在電腦網頁：設定 → 匯入及匯出 → 匯入ICS → 選目標日曆。同步至Android或iPhone後，確認事件保留了提醒；不同日曆可能忽略ICS提醒設定，請檢查08:00事件及測試。日曆通知通常先開啟事件，再點Maps連結，與Scriptable／Tasker直接導航不同。此檔是備用，不必與主方案同時匯入，以免重複提醒。
+
+## 驗證與限制
+
+已查核原始Google Maps清單9個圖釘，主路線使用清單內停車場與店家座標；角板山行館、東眼山農場不在使用者兩天行程，未加入路線。萬大國小使用正式校名定位，無需假造座標。
+
+已在電腦檢查：兩平台16則事件一致、Tasker通知與點擊任務配對、日期限制、Google Maps連結、ICS格式，以及Scriptable排程／出發地修改／過期略過／僅移除本行程通知的模擬執行。iOS捷徑由macOS官方工具簽署成功。尚未在實體iPhone或Android上實測匯入、鎖屏通知及Google Maps跳轉，請以上述測試步驟驗收；檔案產生及格式檢查不等於手機端已安裝成功。
+
+「一鍵匯入」指整份行程一次加入，不是跳過首次安裝App、系統權限、匯入確認；尚未發佈iCloud捷徑分享或TaskerNet公開連結。
+
+## 資料與技術依據
+
+- [George Chan：花甲少年親子團_雙十親子遊](https://maps.app.goo.gl/ycqx2TyJajwJi4mG8)
+- [Google Maps URLs官方文件](https://developers.google.com/maps/documentation/urls/get-started)：導航參數、交通模式與多站路線。
+- [Scriptable Notification](https://docs.scriptable.app/notification/)：日期排程與點擊開啟URL。
+- [Tasker Notify](https://tasker.joaoapps.com/userguide/en/help/ah_notification.html)、[Notification Click](https://tasker.joaoapps.com/userguide/en/help/eh_index.html)、[背景與省電設定](https://tasker.joaoapps.com/userguide/en/androidpowermanagement.html)。
+- [Google Calendar匯入文件](https://support.google.com/calendar/answer/37118)：電腦匯入ICS。
+
+本行程已發布於GitHub Pages；未寫入你的Google帳號或建立Google My Maps。提供的Google Maps路線是可直接開啟的導航連結。
+</pre></html>
